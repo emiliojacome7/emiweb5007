@@ -1,0 +1,19 @@
+[[redirects]]
+  from = "/landing.html"
+  to = "/secondary pages/landing.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/secondary pages/contact.html"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  for = "/secondary pages/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
